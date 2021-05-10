@@ -103,6 +103,9 @@
 		BDAEB2A02649A7E20086C9EA /* Atechy_test */ = {
 			isa = PBXGroup;
 			children = (
+				BDAEB2E22649B7180086C9EA /* ViewModels */,
+				BDAEB2E12649B6CE0086C9EA /* Models */,
+				BDAEB2E02649B6B50086C9EA /* Components */,
 				BDAEB2DF2649B1FA0086C9EA /* Fonts */,
 				BDAEB2D42649ABC20086C9EA /* Views */,
 				BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */,
@@ -156,6 +159,27 @@
 				BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BDAEB2E02649B6B50086C9EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BDAEB2E12649B6CE0086C9EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BDAEB2E22649B7180086C9EA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

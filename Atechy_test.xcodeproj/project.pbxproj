@@ -15,6 +15,8 @@
 		BDAEB2AE2649A7E60086C9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAEB2AC2649A7E60086C9EA /* LaunchScreen.storyboard */; };
 		BDAEB2B92649A7E60086C9EA /* Atechy_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2B82649A7E60086C9EA /* Atechy_testTests.swift */; };
 		BDAEB2C42649A7E60086C9EA /* Atechy_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2C32649A7E60086C9EA /* Atechy_testUITests.swift */; };
+		BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2D52649ABD60086C9EA /* LoginView.swift */; };
+		BDAEB2DB2649B1F40086C9EA /* Hellix-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BDAEB2BF2649A7E60086C9EA /* Atechy_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Atechy_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAEB2C32649A7E60086C9EA /* Atechy_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atechy_testUITests.swift; sourceTree = "<group>"; };
 		BDAEB2C52649A7E60086C9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAEB2D52649ABD60086C9EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hellix-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		BDAEB2A02649A7E20086C9EA /* Atechy_test */ = {
 			isa = PBXGroup;
 			children = (
+				BDAEB2DF2649B1FA0086C9EA /* Fonts */,
+				BDAEB2D42649ABC20086C9EA /* Views */,
 				BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */,
 				BDAEB2A32649A7E20086C9EA /* SceneDelegate.swift */,
 				BDAEB2A52649A7E20086C9EA /* ContentView.swift */,
@@ -134,6 +140,22 @@
 				BDAEB2C52649A7E60086C9EA /* Info.plist */,
 			);
 			path = Atechy_testUITests;
+			sourceTree = "<group>";
+		};
+		BDAEB2D42649ABC20086C9EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEB2D52649ABD60086C9EA /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDAEB2DF2649B1FA0086C9EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +264,7 @@
 				BDAEB2AE2649A7E60086C9EA /* LaunchScreen.storyboard in Resources */,
 				BDAEB2AB2649A7E60086C9EA /* Preview Assets.xcassets in Resources */,
 				BDAEB2A82649A7E60086C9EA /* Assets.xcassets in Resources */,
+				BDAEB2DB2649B1F40086C9EA /* Hellix-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +291,7 @@
 			files = (
 				BDAEB2A22649A7E20086C9EA /* AppDelegate.swift in Sources */,
 				BDAEB2A42649A7E20086C9EA /* SceneDelegate.swift in Sources */,
+				BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */,
 				BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

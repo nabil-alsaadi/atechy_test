@@ -1,81 +1,82 @@
 //
-//  LoginView.swift
+//  SignupView.swift
 //  Atechy_test
 //
-//  Created by nabil on 5/10/21.
+//  Created by nabil on 5/11/21.
 //
+
 
 import SwiftUI
 
-struct LoginView: View {
+struct SignupView: View {
+    @State private var name: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
-    @State private var SignupPresented :Bool = false
+    @State private var confirmPassword: String = ""
+    @Binding var isPresented : Bool
     var body: some View {
-        NavigationView {
+        GeometryReader { metrics in
         VStack(alignment:.center) {
             
             HStack {
                 Image("Teamio_logo")
                     .resizable()
-                    .frame(width: 150, height: 30, alignment:.center)
+                    .frame(width: 150, height: 30, alignment: .center)
                     
             }
+            
             .frame(height: DesignUtilities.getAutoHeight(viewHeight: 225), alignment: .center)
             
             
             
-            Text("Sign in to your Account")
+            Text("Create your Account")
                 .font(Font.custom("Hellix", size: 20))
                 .fontWeight(.bold)
                 .foregroundColor(Color.titleColor)
-                
-            CustomFieldWithIconView(value: $email, label: "Email", secure: false)
-            CustomFieldWithIconView(value: $password, label: "Password", secure: true)
-            
+            CustomFieldView(value: $name, label: "Name", secure: false)
+            CustomFieldView(value: $email, label: "Email", secure: false)
+            CustomFieldView(value: $password, label: "Password", secure: true)
+            CustomFieldView(value: $confirmPassword, label: "Confirm password", secure: true)
             VStack {
-                CustomButtonView(title: "Sign in") {
+                CustomButtonView(title: "Sign up") {
                     
                 }
                     
                 HStack(spacing:0) {
-                    Text("Don’t have a Teamio account yet? ")
+                    Text("Already have account? ")
                         .font(Font.custom("Hellix", size: 14))
                         .fontWeight(.regular)
-                    
                     Button(action: {
                         // What to perform
-                        self.SignupPresented.toggle()
+                        self.isPresented = false
                     }) {
-                        Text("Sign up")
+                        Text("Sign in")
                             .font(Font.custom("Hellix", size: 14))
                             .fontWeight(.semibold)
                             .foregroundColor(.black)
                     }
-                    .fullScreenCover(isPresented: $SignupPresented, content: {
-                        SignupView(isPresented: $SignupPresented)
-                    })
                 }
                 .padding(.top,36)
             }
-            .padding(.top,DesignUtilities.getAutoHeight(viewHeight: 89))
+            .padding(.top,DesignUtilities.getAutoHeight(viewHeight: 57))
             
             
-            Spacer()
+            
             
         }
-        .navigationBarHidden(true)
+        
         
     }
+        .ignoresSafeArea()
     }
     
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        
+        SignupView(isPresented: .constant(false))
             .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
                         .previewDisplayName("iPhone 12 Pro Max")
     }
 }
-

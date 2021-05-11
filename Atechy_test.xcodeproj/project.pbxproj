@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D53F72649F45500B3BFC5 /* DesignUtilities.swift */; };
+		BD494A1E264AEB1F002E9748 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A1D264AEB1F002E9748 /* HomeView.swift */; };
+		BD494A23264AEC30002E9748 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A22264AEC30002E9748 /* TweetRowView.swift */; };
+		BD494A28264AF0AD002E9748 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A27264AF0AD002E9748 /* Tweet.swift */; };
+		BD494A2D264AF135002E9748 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A2C264AF135002E9748 /* ModelData.swift */; };
+		BD494A33264AF2FA002E9748 /* tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = BD494A32264AF2FA002E9748 /* tweets.json */; };
+		BD7A45682649E2860053430E /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A45672649E2850053430E /* CustomButtonView.swift */; };
 		BDAEB2A22649A7E20086C9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */; };
 		BDAEB2A42649A7E20086C9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2A32649A7E20086C9EA /* SceneDelegate.swift */; };
 		BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2A52649A7E20086C9EA /* ContentView.swift */; };
@@ -17,6 +24,11 @@
 		BDAEB2C42649A7E60086C9EA /* Atechy_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2C32649A7E60086C9EA /* Atechy_testUITests.swift */; };
 		BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2D52649ABD60086C9EA /* LoginView.swift */; };
 		BDAEB2DB2649B1F40086C9EA /* Hellix-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */; };
+		BDAEB2E72649BA5A0086C9EA /* Hellix-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAEB2E62649BA5A0086C9EA /* Hellix-Bold.ttf */; };
+		BDAEB2EC2649BBA20086C9EA /* CustomFieldWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */; };
+		BDAEB2F22649BC860086C9EA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2F12649BC860086C9EA /* Color+Extension.swift */; };
+		BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8722649F8950061DA85 /* SignupView.swift */; };
+		BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD3D53F72649F45500B3BFC5 /* DesignUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignUtilities.swift; sourceTree = "<group>"; };
+		BD494A1D264AEB1F002E9748 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BD494A22264AEC30002E9748 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
+		BD494A27264AF0AD002E9748 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		BD494A2C264AF135002E9748 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		BD494A32264AF2FA002E9748 /* tweets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tweets.json; sourceTree = "<group>"; };
+		BD7A45672649E2850053430E /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		BDAEB29E2649A7E20086C9EA /* Atechy_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atechy_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDAEB2A32649A7E20086C9EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +72,11 @@
 		BDAEB2C52649A7E60086C9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDAEB2D52649ABD60086C9EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hellix-Regular.ttf"; sourceTree = "<group>"; };
+		BDAEB2E62649BA5A0086C9EA /* Hellix-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hellix-Bold.ttf"; sourceTree = "<group>"; };
+		BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldWithIconView.swift; sourceTree = "<group>"; };
+		BDAEB2F12649BC860086C9EA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		BDD4F8722649F8950061DA85 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3D53F62649F43E00B3BFC5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D53F72649F45500B3BFC5 /* DesignUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BD494A31264AF163002E9748 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD494A32264AF2FA002E9748 /* tweets.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BDAEB2952649A7E20086C9EA = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +143,9 @@
 		BDAEB2A02649A7E20086C9EA /* Atechy_test */ = {
 			isa = PBXGroup;
 			children = (
+				BD494A31264AF163002E9748 /* Resources */,
+				BD3D53F62649F43E00B3BFC5 /* Utilities */,
+				BDAEB2F02649BC6B0086C9EA /* Extentions */,
 				BDAEB2E22649B7180086C9EA /* ViewModels */,
 				BDAEB2E12649B6CE0086C9EA /* Models */,
 				BDAEB2E02649B6B50086C9EA /* Components */,
@@ -149,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				BDAEB2D52649ABD60086C9EA /* LoginView.swift */,
+				BDD4F8722649F8950061DA85 /* SignupView.swift */,
+				BD494A1D264AEB1F002E9748 /* HomeView.swift */,
+				BD494A22264AEC30002E9748 /* TweetRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				BDAEB2DA2649B1F40086C9EA /* Hellix-Regular.ttf */,
+				BDAEB2E62649BA5A0086C9EA /* Hellix-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -164,6 +211,9 @@
 		BDAEB2E02649B6B50086C9EA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */,
+				BD7A45672649E2850053430E /* CustomButtonView.swift */,
+				BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -171,6 +221,8 @@
 		BDAEB2E12649B6CE0086C9EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BD494A27264AF0AD002E9748 /* Tweet.swift */,
+				BD494A2C264AF135002E9748 /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +232,14 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BDAEB2F02649BC6B0086C9EA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEB2F12649BC860086C9EA /* Color+Extension.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAEB2E72649BA5A0086C9EA /* Hellix-Bold.ttf in Resources */,
+				BD494A33264AF2FA002E9748 /* tweets.json in Resources */,
 				BDAEB2AE2649A7E60086C9EA /* LaunchScreen.storyboard in Resources */,
 				BDAEB2AB2649A7E60086C9EA /* Preview Assets.xcassets in Resources */,
 				BDAEB2A82649A7E60086C9EA /* Assets.xcassets in Resources */,
@@ -313,10 +375,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */,
+				BDAEB2EC2649BBA20086C9EA /* CustomFieldWithIconView.swift in Sources */,
+				BDAEB2F22649BC860086C9EA /* Color+Extension.swift in Sources */,
 				BDAEB2A22649A7E20086C9EA /* AppDelegate.swift in Sources */,
 				BDAEB2A42649A7E20086C9EA /* SceneDelegate.swift in Sources */,
+				BD494A28264AF0AD002E9748 /* Tweet.swift in Sources */,
+				BD494A23264AEC30002E9748 /* TweetRowView.swift in Sources */,
+				BD494A1E264AEB1F002E9748 /* HomeView.swift in Sources */,
+				BD7A45682649E2860053430E /* CustomButtonView.swift in Sources */,
 				BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */,
+				BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */,
+				BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */,
 				BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */,
+				BD494A2D264AF135002E9748 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

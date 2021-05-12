@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>708478609420-oq3ulijg352h1gjn2e2h6tlhcmcvap53.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.708478609420-oq3ulijg352h1gjn2e2h6tlhcmcvap53</string>
+	<key>API_KEY</key>
+	<string>AIzaSyApf4x2foLVWDTV-midtO3YsRNhkkKu1ug</string>
+	<key>GCM_SENDER_ID</key>
+	<string>708478609420</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Atechy-test</string>
+	<key>PROJECT_ID</key>
+	<string>atechy-test</string>
+	<key>STORAGE_BUCKET</key>
+	<string>atechy-test.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:708478609420:ios:0ce85e71c24676b7b3e629</string>
+</dict>
+</plist>

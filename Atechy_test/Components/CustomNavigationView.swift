@@ -9,12 +9,14 @@ import SwiftUI
 
 struct CustomNavigationView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var session: SessionStore
     var body: some View {
         VStack(spacing:0) {
             ZStack {
                 HStack {
                     Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
+                        //self.presentationMode.wrappedValue.dismiss()
+                        session.signOut()
                     }) {
                         Image("Back")
                             .resizable()

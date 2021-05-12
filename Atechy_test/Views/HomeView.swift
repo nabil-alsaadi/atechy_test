@@ -24,21 +24,7 @@ struct HomeView: View {
                            
                             
                         }
-    //                    ForEach(0..<tweetListViewModel.tweetViewModels.count) { i in
-    //                        TweetRowView(tweetViewModel: tweetListViewModel.tweetViewModels[i],index: i,count: tweetListViewModel.tweetViewModels.count)
-    //                    }
                     }
-//                    onChange(of: tweetListViewModel.tweetViewModels, perform: { tweetViewModels in
-////                        let id = tweetViewModels.last?.id
-////                        withAnimation { 
-////                            scrollProxy.scrollTo(id)
-////                        }
-//
-//
-//                    })
-//                    .onAppear {
-//                        scrollView.scrollTo(tweetListViewModel.tweetViewModels[tweetListViewModel.tweetViewModels.count-1])
-//                    }
                 }
             }
             // tweet reply field

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var SignupPresented :Bool = false
-    @State var logged: Bool = false
+    @EnvironmentObject var session: SessionStore
+    @ObservedObject var loginViewModel = LoginViewModel()
+    
     var body: some View {
         NavigationView {
         VStack(alignment:.center) {
@@ -31,37 +30,40 @@ struct LoginView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color.titleColor)
                 
-            CustomFieldWithIconView(value: $email, label: "Email", secure: false)
-            CustomFieldWithIconView(value: $password, label: "Password", secure: true)
+            CustomFieldWithIconView(value: $loginViewModel.email, label: "Email", secure: false)
+            CustomFieldWithIconView(value: $loginViewModel.password , label: "Password", secure: true)
+            if (loginViewModel.error != "") {
+                Text(loginViewModel.error)
+                    .font(Font.custom("Hellix", size: 14))
+                    .foregroundColor(Color.red)
+                    .padding(.top,10)
+            }
             
             VStack {
-                NavigationLink(
-                    destination: HomeView(),
-                    isActive: $logged,
-                    label: {
-                        CustomButtonView(title: "Sign in") {
-                            self.logged = true
-                        }
-                    })
-                
-                    
-                HStack(spacing:0) {
-                    Text("Don’t have a Teamio account yet? ")
-                        .font(Font.custom("Hellix", size: 14))
-                        .fontWeight(.regular)
-                    
-                    Button(action: {
-                        // What to perform
-                        self.SignupPresented.toggle()
-                    }) {
-                        Text("Sign up")
-                            .font(Font.custom("Hellix", size: 14))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.black)
+                if loginViewModel.loading {
+                    ProgressView()
+                }
+                else {
+                    CustomButtonView(title: "Sign in") {
+                        loginViewModel.signIn()
                     }
-                    .fullScreenCover(isPresented: $SignupPresented, content: {
-                        SignupView(isPresented: $SignupPresented)
-                    })
+                }
+                
+                
+                HStack(spacing:0) {
+                    NavigationLink(destination: SignupView()) {
+                        HStack(spacing:0) {
+                        Text("Don’t have a Teamio account yet? ")
+                            .font(Font.custom("Hellix", size: 14))
+                            .fontWeight(.regular)
+                            .foregroundColor(.black)
+                            Text("Sign up")
+                                .font(Font.custom("Hellix", size: 14))
+                                .fontWeight(.semibold)
+                                .foregroundColor(.black)
+                        }
+                    }
+                    
                 }
                 .padding(.top,36)
             }
@@ -73,6 +75,9 @@ struct LoginView: View {
         }
         .navigationBarHidden(true)
         
+    }
+    .onAppear {
+        self.loginViewModel.session = session
     }
     }
     

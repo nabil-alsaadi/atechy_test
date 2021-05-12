@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		213EAC543F301CD88F6EA8D8 /* Pods_Atechy_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB5A4401B42B807B5586DA3 /* Pods_Atechy_test.framework */; };
-		624B00097F3D1A2D06A3A79C /* Pods_Atechy_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9F12B32989E89EECADD1C5 /* Pods_Atechy_testTests.framework */; };
 		BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D53F72649F45500B3BFC5 /* DesignUtilities.swift */; };
 		BD494A1E264AEB1F002E9748 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A1D264AEB1F002E9748 /* HomeView.swift */; };
 		BD494A23264AEC30002E9748 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A22264AEC30002E9748 /* TweetRowView.swift */; };
@@ -30,15 +28,26 @@
 		BDAEB2E72649BA5A0086C9EA /* Hellix-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDAEB2E62649BA5A0086C9EA /* Hellix-Bold.ttf */; };
 		BDAEB2EC2649BBA20086C9EA /* CustomFieldWithIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */; };
 		BDAEB2F22649BC860086C9EA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2F12649BC860086C9EA /* Color+Extension.swift */; };
+		BDB0466E264C0BDC00E9968D /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB0466D264C0BDC00E9968D /* UserData.swift */; };
+		BDB04673264C369300E9968D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB04672264C369300E9968D /* SessionStore.swift */; };
 		BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8722649F8950061DA85 /* SignupView.swift */; };
 		BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */; };
+		BDE810F1264C5F9300A6A46C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE810F0264C5F9300A6A46C /* LoginViewModel.swift */; };
 		BDE8D497264B6038001595B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDE8D496264B6038001595B3 /* GoogleService-Info.plist */; };
 		BDE8D4B6264B6C89001595B3 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4B5264B6C89001595B3 /* TweetRepository.swift */; };
 		BDE8D4EA264B6F2E001595B3 /* TweetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */; };
 		BDE8D4F3264B70EB001595B3 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4F2264B70EB001595B3 /* NewTweetView.swift */; };
 		BDE8D4F8264B766D001595B3 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */; };
 		BDE8D4FD264B8040001595B3 /* Date+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4FC264B8040001595B3 /* Date+Extention.swift */; };
-		DEECC300BDE49BF9C60C633C /* Pods_Atechy_test_Atechy_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C866EA2D3B64D5A9553F84B /* Pods_Atechy_test_Atechy_testUITests.framework */; };
+		BDE8D508264BA3A1001595B3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D507264BA3A1001595B3 /* FirebaseFirestore */; };
+		BDE8D50A264BA3A1001595B3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D509264BA3A1001595B3 /* FirebaseDatabase */; };
+		BDE8D50C264BA3A1001595B3 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D50B264BA3A1001595B3 /* FirebaseInstallations */; };
+		BDE8D50E264BA3A1001595B3 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D50D264BA3A1001595B3 /* FirebaseFirestoreSwift-Beta */; };
+		BDE8D510264BA3A1001595B3 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D50F264BA3A1001595B3 /* FirebaseStorageSwift-Beta */; };
+		BDE8D512264BA3A1001595B3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D511264BA3A1001595B3 /* FirebaseStorage */; };
+		BDE8D514264BA3A1001595B3 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D513264BA3A1001595B3 /* FirebaseFunctions */; };
+		BDE8D516264BA3A1001595B3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BDE8D515264BA3A1001595B3 /* FirebaseAuth */; };
+		BDE8D522264BADBC001595B3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D521264BADBC001595B3 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C866EA2D3B64D5A9553F84B /* Pods_Atechy_test_Atechy_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atechy_test_Atechy_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F9F12B32989E89EECADD1C5 /* Pods_Atechy_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atechy_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72F329F0DCEE2D82E71B127A /* Pods-Atechy_testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_testTests.debug.xcconfig"; path = "Target Support Files/Pods-Atechy_testTests/Pods-Atechy_testTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8D87DCFE296D7727EE34CDE6 /* Pods-Atechy_test-Atechy_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test-Atechy_testUITests.release.xcconfig"; path = "Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AFB5A4401B42B807B5586DA3 /* Pods_Atechy_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atechy_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B82A69D73B7A477AC34F21E1 /* Pods-Atechy_testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_testTests.release.xcconfig"; path = "Target Support Files/Pods-Atechy_testTests/Pods-Atechy_testTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD3D53F72649F45500B3BFC5 /* DesignUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignUtilities.swift; sourceTree = "<group>"; };
 		BD494A1D264AEB1F002E9748 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BD494A22264AEC30002E9748 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
@@ -92,17 +95,18 @@
 		BDAEB2E62649BA5A0086C9EA /* Hellix-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hellix-Bold.ttf"; sourceTree = "<group>"; };
 		BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldWithIconView.swift; sourceTree = "<group>"; };
 		BDAEB2F12649BC860086C9EA /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		BDB2FAA39E9C7A8681398B64 /* Pods-Atechy_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test.debug.xcconfig"; path = "Target Support Files/Pods-Atechy_test/Pods-Atechy_test.debug.xcconfig"; sourceTree = "<group>"; };
+		BDB0466D264C0BDC00E9968D /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BDB04672264C369300E9968D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		BDD4F8722649F8950061DA85 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldView.swift; sourceTree = "<group>"; };
+		BDE810F0264C5F9300A6A46C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BDE8D496264B6038001595B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDE8D4B5264B6C89001595B3 /* TweetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
 		BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListViewModel.swift; sourceTree = "<group>"; };
 		BDE8D4F2264B70EB001595B3 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 		BDE8D4FC264B8040001595B3 /* Date+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extention.swift"; sourceTree = "<group>"; };
-		D43349AEEF083A420087CCB0 /* Pods-Atechy_test-Atechy_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test-Atechy_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDCBA7056029418336947B5B /* Pods-Atechy_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test.release.xcconfig"; path = "Target Support Files/Pods-Atechy_test/Pods-Atechy_test.release.xcconfig"; sourceTree = "<group>"; };
+		BDE8D521264BADBC001595B3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +114,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				213EAC543F301CD88F6EA8D8 /* Pods_Atechy_test.framework in Frameworks */,
+				BDE8D50A264BA3A1001595B3 /* FirebaseDatabase in Frameworks */,
+				BDE8D50E264BA3A1001595B3 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				BDE8D514264BA3A1001595B3 /* FirebaseFunctions in Frameworks */,
+				BDE8D516264BA3A1001595B3 /* FirebaseAuth in Frameworks */,
+				BDE8D508264BA3A1001595B3 /* FirebaseFirestore in Frameworks */,
+				BDE8D512264BA3A1001595B3 /* FirebaseStorage in Frameworks */,
+				BDE8D50C264BA3A1001595B3 /* FirebaseInstallations in Frameworks */,
+				BDE8D510264BA3A1001595B3 /* FirebaseStorageSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624B00097F3D1A2D06A3A79C /* Pods_Atechy_testTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEECC300BDE49BF9C60C633C /* Pods_Atechy_test_Atechy_testUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,24 +145,8 @@
 		86B8CB40D7BDE1C0D2BC3FDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFB5A4401B42B807B5586DA3 /* Pods_Atechy_test.framework */,
-				1C866EA2D3B64D5A9553F84B /* Pods_Atechy_test_Atechy_testUITests.framework */,
-				1F9F12B32989E89EECADD1C5 /* Pods_Atechy_testTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A308EBA09DD003035704DC46 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BDB2FAA39E9C7A8681398B64 /* Pods-Atechy_test.debug.xcconfig */,
-				FDCBA7056029418336947B5B /* Pods-Atechy_test.release.xcconfig */,
-				D43349AEEF083A420087CCB0 /* Pods-Atechy_test-Atechy_testUITests.debug.xcconfig */,
-				8D87DCFE296D7727EE34CDE6 /* Pods-Atechy_test-Atechy_testUITests.release.xcconfig */,
-				72F329F0DCEE2D82E71B127A /* Pods-Atechy_testTests.debug.xcconfig */,
-				B82A69D73B7A477AC34F21E1 /* Pods-Atechy_testTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		BD3D53F62649F43E00B3BFC5 /* Utilities */ = {
@@ -179,7 +172,6 @@
 				BDAEB2B72649A7E60086C9EA /* Atechy_testTests */,
 				BDAEB2C22649A7E60086C9EA /* Atechy_testUITests */,
 				BDAEB29F2649A7E20086C9EA /* Products */,
-				A308EBA09DD003035704DC46 /* Pods */,
 				86B8CB40D7BDE1C0D2BC3FDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -282,6 +274,7 @@
 			children = (
 				BD494A27264AF0AD002E9748 /* Tweet.swift */,
 				BD494A2C264AF135002E9748 /* ModelData.swift */,
+				BDB0466D264C0BDC00E9968D /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +284,8 @@
 			children = (
 				BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */,
 				BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */,
+				BDE8D521264BADBC001595B3 /* UserViewModel.swift */,
+				BDE810F0264C5F9300A6A46C /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -323,6 +318,7 @@
 		BDE8D505264BA02E001595B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BDB04672264C369300E9968D /* SessionStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -338,13 +334,22 @@
 				BDAEB29A2649A7E20086C9EA /* Sources */,
 				BDAEB29B2649A7E20086C9EA /* Frameworks */,
 				BDAEB29C2649A7E20086C9EA /* Resources */,
-				F82C4AF74C9D446446F336E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Atechy_test;
+			packageProductDependencies = (
+				BDE8D507264BA3A1001595B3 /* FirebaseFirestore */,
+				BDE8D509264BA3A1001595B3 /* FirebaseDatabase */,
+				BDE8D50B264BA3A1001595B3 /* FirebaseInstallations */,
+				BDE8D50D264BA3A1001595B3 /* FirebaseFirestoreSwift-Beta */,
+				BDE8D50F264BA3A1001595B3 /* FirebaseStorageSwift-Beta */,
+				BDE8D511264BA3A1001595B3 /* FirebaseStorage */,
+				BDE8D513264BA3A1001595B3 /* FirebaseFunctions */,
+				BDE8D515264BA3A1001595B3 /* FirebaseAuth */,
+			);
 			productName = Atechy_test;
 			productReference = BDAEB29E2649A7E20086C9EA /* Atechy_test.app */;
 			productType = "com.apple.product-type.application";
@@ -376,7 +381,6 @@
 				BDAEB2BB2649A7E60086C9EA /* Sources */,
 				BDAEB2BC2649A7E60086C9EA /* Frameworks */,
 				BDAEB2BD2649A7E60086C9EA /* Resources */,
-				072AFC92411988B7E67F18E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,6 +423,9 @@
 				Base,
 			);
 			mainGroup = BDAEB2952649A7E20086C9EA;
+			packageReferences = (
+				BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BDAEB29F2649A7E20086C9EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,23 +469,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		072AFC92411988B7E67F18E4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1F907806A6557DC3F7ED6FB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,18 +499,16 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Atechy_test-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		EC2BEE72914925D1E09A5142 /* [CP] Check Pods Manifest.lock */ = {
@@ -545,23 +533,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F82C4AF74C9D446446F336E2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Atechy_test/Pods-Atechy_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Atechy_test/Pods-Atechy_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Atechy_test/Pods-Atechy_test-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -569,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB04673264C369300E9968D /* SessionStore.swift in Sources */,
 				BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */,
 				BDE8D4EA264B6F2E001595B3 /* TweetListViewModel.swift in Sources */,
 				BDE8D4FD264B8040001595B3 /* Date+Extention.swift in Sources */,
@@ -578,14 +550,17 @@
 				BDAEB2A42649A7E20086C9EA /* SceneDelegate.swift in Sources */,
 				BD494A28264AF0AD002E9748 /* Tweet.swift in Sources */,
 				BD494A23264AEC30002E9748 /* TweetRowView.swift in Sources */,
+				BDE8D522264BADBC001595B3 /* UserViewModel.swift in Sources */,
 				BD494A1E264AEB1F002E9748 /* HomeView.swift in Sources */,
 				BD7A45682649E2860053430E /* CustomButtonView.swift in Sources */,
 				BDE8D4B6264B6C89001595B3 /* TweetRepository.swift in Sources */,
 				BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */,
 				BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */,
 				BDE8D4F8264B766D001595B3 /* TweetViewModel.swift in Sources */,
+				BDB0466E264C0BDC00E9968D /* UserData.swift in Sources */,
 				BDE8D4F3264B70EB001595B3 /* NewTweetView.swift in Sources */,
 				BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */,
+				BDE810F1264C5F9300A6A46C /* LoginViewModel.swift in Sources */,
 				BD5E7E22264B32B200BEF445 /* CustomNavigationView.swift in Sources */,
 				BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */,
 				BD494A2D264AF135002E9748 /* ModelData.swift in Sources */,
@@ -753,7 +728,6 @@
 		};
 		BDAEB2C92649A7E60086C9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDB2FAA39E9C7A8681398B64 /* Pods-Atechy_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -775,7 +749,6 @@
 		};
 		BDAEB2CA2649A7E60086C9EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDCBA7056029418336947B5B /* Pods-Atechy_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -797,7 +770,6 @@
 		};
 		BDAEB2CC2649A7E60086C9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F329F0DCEE2D82E71B127A /* Pods-Atechy_testTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -820,7 +792,6 @@
 		};
 		BDAEB2CD2649A7E60086C9EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B82A69D73B7A477AC34F21E1 /* Pods-Atechy_testTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -843,7 +814,6 @@
 		};
 		BDAEB2CF2649A7E60086C9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43349AEEF083A420087CCB0 /* Pods-Atechy_test-Atechy_testUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -864,7 +834,6 @@
 		};
 		BDAEB2D02649A7E60086C9EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D87DCFE296D7727EE34CDE6 /* Pods-Atechy_test-Atechy_testUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -923,6 +892,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDE8D507264BA3A1001595B3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BDE8D509264BA3A1001595B3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BDE8D50B264BA3A1001595B3 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		BDE8D50D264BA3A1001595B3 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		BDE8D50F264BA3A1001595B3 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		BDE8D511264BA3A1001595B3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		BDE8D513264BA3A1001595B3 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		BDE8D515264BA3A1001595B3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDE8D506264BA3A1001595B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDAEB2962649A7E20086C9EA /* Project object */;
 }

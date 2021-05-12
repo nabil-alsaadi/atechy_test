@@ -33,7 +33,7 @@ struct CustomFieldView: View {
                         .stroke(Color.BorderGrey, lineWidth: 0.25)
                 )
         .padding(.horizontal, 17)
-        .padding(.top, 30)
+        .padding(.top, 20)
         
     }
 }

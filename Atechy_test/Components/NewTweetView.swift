@@ -10,6 +10,7 @@ import SwiftUI
 struct NewTweetView: View {
     @Binding var replyText : String
     @ObservedObject var tweetListViewModel: TweetListViewModel
+    @EnvironmentObject var session: SessionStore
     var body: some View {
         VStack(spacing:8) {
             Divider()
@@ -49,9 +50,12 @@ struct NewTweetView: View {
         }
     }
     private func addTweet() {
-        let tweet = Tweet(message: replyText)
-        tweetListViewModel.add(tweet)
-        replyText = ""
+        if let user  = session.session {
+            let tweet = Tweet(message: replyText,user: user)
+            tweetListViewModel.add(tweet)
+            replyText = ""
+        }
+        
         
     }
 }

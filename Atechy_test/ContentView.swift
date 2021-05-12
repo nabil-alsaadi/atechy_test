@@ -8,14 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    @EnvironmentObject var session: SessionStore
+    func getUser () {
+        session.listen()
     }
+    var body: some View {
+        Group {
+            if (session.session != nil) {
+                HomeView()
+            } else {
+                LoginView()
+            }
+        }.onAppear(perform: getUser)
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SessionStore())
     }
 }

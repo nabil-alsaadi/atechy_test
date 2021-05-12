@@ -12,13 +12,11 @@ enum itemPosition {
     case middle
 }
 struct TweetRowView: View {
-    var tweet : Tweet{
-        didSet{
-            
-        }
-    }
-    @State var postion : itemPosition = .first
     
+    var tweetViewModel: TweetViewModel
+    @State var postion : itemPosition = .first
+    var index:Int = 0
+    var count:Int = 0
     var body: some View {
         HStack(spacing:0) {
             ZStack {
@@ -45,7 +43,7 @@ struct TweetRowView: View {
                     }
                     
                 }
-                tweet.image
+                tweetViewModel.tweet.image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 45, height: 45, alignment: .center)
@@ -58,21 +56,24 @@ struct TweetRowView: View {
             
             VStack(alignment:.leading,spacing:8) {
                 HStack(spacing:5) {
-                    Text(tweet.name)
+                    Text(tweetViewModel.tweet.name)
                         .font(Font.custom("Hellix", size: 14))
                         .fontWeight(.semibold)
-                    Text(tweet.username)
+                    Text(tweetViewModel.tweet.username)
+                        .foregroundColor(Color.tweetTitleBlack)
+                        .font(Font.custom("Hellix", size: 14))
+                    Text( " . \(tweetViewModel.tweet.date.timeAgoDisplay())" )
                         .foregroundColor(Color.tweetTitleBlack)
                         .font(Font.custom("Hellix", size: 14))
                     Spacer()
-                    if tweet.id == 1 {
+                    if postion == .first  {
                     Image("twitter_logo")
                         .resizable()
                         .frame(width: 20, height: 20, alignment: .center)
                         .padding(.trailing,17)
                     }
                 }
-                Text(tweet.message)
+                Text(tweetViewModel.tweet.message)
                     .foregroundColor(Color.tweetTitleBlack)
                     .font(Font.custom("Hellix", size: 14))
             }
@@ -81,13 +82,13 @@ struct TweetRowView: View {
         .frame(height: 80)
         .padding(0)
         .onAppear(perform: {
-            self.postion = .middle
-            if tweet.id == tweets[0].id {
-                self.postion = .first
-            }
-            if tweet.id == tweets[tweets.count-1].id {
-                self.postion = .last
-            }
+//            self.postion = .middle
+//            if index == 0 {
+//                self.postion = .first
+//            }
+//            if index == count - 1 {
+//                self.postion = .last
+//            }
         })
 //        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
 //          .frame(
@@ -103,6 +104,6 @@ struct TweetRowView: View {
 
 struct TweetRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetRowView(tweet: tweets[0])
+        TweetRowView(tweetViewModel: TweetViewModel(tweet: tweets[0]))
     }
 }

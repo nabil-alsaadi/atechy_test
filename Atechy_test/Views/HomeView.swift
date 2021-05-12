@@ -9,48 +9,54 @@ import SwiftUI
 
 struct HomeView: View {
     @State var replyText : String = ""
+    @ObservedObject var tweetListViewModel = TweetListViewModel()
     var body: some View {
         VStack(spacing:0) {
             // custom navigation bar
             CustomNavigationView()
             // tweets list
-            ScrollView {
-                LazyVStack(spacing: 0) {
-                    ForEach(tweets, id: \.self) { tweet in
-                        TweetRowView(tweet: tweet)
+            ScrollViewReader { scrollProxy in
+                ScrollView {
+                    LazyVStack(spacing: 0) {
+                        ForEach(tweetListViewModel.tweetViewModels, id: \.id) { tweetViewModel in
+                            
+                                TweetRowView(tweetViewModel: tweetViewModel,postion: getPostion(item: tweetViewModel))
+                           
+                            
+                        }
+    //                    ForEach(0..<tweetListViewModel.tweetViewModels.count) { i in
+    //                        TweetRowView(tweetViewModel: tweetListViewModel.tweetViewModels[i],index: i,count: tweetListViewModel.tweetViewModels.count)
+    //                    }
                     }
+//                    onChange(of: tweetListViewModel.tweetViewModels, perform: { tweetViewModels in
+////                        let id = tweetViewModels.last?.id
+////                        withAnimation { 
+////                            scrollProxy.scrollTo(id)
+////                        }
+//
+//
+//                    })
+//                    .onAppear {
+//                        scrollView.scrollTo(tweetListViewModel.tweetViewModels[tweetListViewModel.tweetViewModels.count-1])
+//                    }
                 }
             }
             // tweet reply field
-            VStack(spacing:8) {
-                Divider()
-                    .padding(.trailing,17)
-                
-                HStack(spacing:8) {
-                    Image("Avatar")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 45, height: 45, alignment: .center)
-                        .padding(.leading,20)
-                    HStack(spacing: 0) {
-                        TextField("Tweet your reply", text: $replyText)
-                            .foregroundColor(Color.darkGrey)
-                            .frame(height: 50)
-                            .padding(.horizontal,12)
-                        .background(Color.lightGrey)
-                            .foregroundColor(Color.darkGrey)
-                            
-                    }
-                    .cornerRadius(25)
-                    .padding(.trailing,17)
-                    
-                    
-                }
-                
-            }
-            
+            NewTweetView(replyText: $replyText, tweetListViewModel: TweetListViewModel())
+                .padding(.bottom,20)
         }
         .navigationBarHidden(true)
+    }
+    private func getPostion(item:TweetViewModel) -> itemPosition {
+        if item == tweetListViewModel.tweetViewModels.last {
+            return .last
+        }
+        else if item == tweetListViewModel.tweetViewModels.first {
+            return .first
+        }
+        else {
+            return .middle
+        }
     }
 }
 

@@ -7,7 +7,8 @@ target 'Atechy_test' do
 
   # Pods for Atechy_test
   pod 'Firebase'
-  
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
   target 'Atechy_testTests' do
     inherit! :search_paths
     # Pods for testing

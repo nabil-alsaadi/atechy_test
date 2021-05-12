@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,11 @@
 		BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8722649F8950061DA85 /* SignupView.swift */; };
 		BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */; };
 		BDE8D497264B6038001595B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDE8D496264B6038001595B3 /* GoogleService-Info.plist */; };
+		BDE8D4B6264B6C89001595B3 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4B5264B6C89001595B3 /* TweetRepository.swift */; };
+		BDE8D4EA264B6F2E001595B3 /* TweetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */; };
+		BDE8D4F3264B70EB001595B3 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4F2264B70EB001595B3 /* NewTweetView.swift */; };
+		BDE8D4F8264B766D001595B3 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */; };
+		BDE8D4FD264B8040001595B3 /* Date+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE8D4FC264B8040001595B3 /* Date+Extention.swift */; };
 		DEECC300BDE49BF9C60C633C /* Pods_Atechy_test_Atechy_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C866EA2D3B64D5A9553F84B /* Pods_Atechy_test_Atechy_testUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +96,11 @@
 		BDD4F8722649F8950061DA85 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFieldView.swift; sourceTree = "<group>"; };
 		BDE8D496264B6038001595B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDE8D4B5264B6C89001595B3 /* TweetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
+		BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListViewModel.swift; sourceTree = "<group>"; };
+		BDE8D4F2264B70EB001595B3 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
+		BDE8D4FC264B8040001595B3 /* Date+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extention.swift"; sourceTree = "<group>"; };
 		D43349AEEF083A420087CCB0 /* Pods-Atechy_test-Atechy_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test-Atechy_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-Atechy_test-Atechy_testUITests/Pods-Atechy_test-Atechy_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FDCBA7056029418336947B5B /* Pods-Atechy_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atechy_test.release.xcconfig"; path = "Target Support Files/Pods-Atechy_test/Pods-Atechy_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +153,6 @@
 				72F329F0DCEE2D82E71B127A /* Pods-Atechy_testTests.debug.xcconfig */,
 				B82A69D73B7A477AC34F21E1 /* Pods-Atechy_testTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,6 +197,8 @@
 		BDAEB2A02649A7E20086C9EA /* Atechy_test */ = {
 			isa = PBXGroup;
 			children = (
+				BDE8D505264BA02E001595B3 /* Services */,
+				BDE8D4B4264B6C4E001595B3 /* Repositories */,
 				BD494A31264AF163002E9748 /* Resources */,
 				BD3D53F62649F43E00B3BFC5 /* Utilities */,
 				BDAEB2F02649BC6B0086C9EA /* Extentions */,
@@ -240,7 +251,7 @@
 				BDAEB2D52649ABD60086C9EA /* LoginView.swift */,
 				BDD4F8722649F8950061DA85 /* SignupView.swift */,
 				BD494A1D264AEB1F002E9748 /* HomeView.swift */,
-				BD494A22264AEC30002E9748 /* TweetRowView.swift */,
+				BDE8D4EE264B702B001595B3 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 				BD7A45672649E2850053430E /* CustomButtonView.swift */,
 				BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */,
 				BD5E7E21264B32B200BEF445 /* CustomNavigationView.swift */,
+				BDE8D4F2264B70EB001595B3 /* NewTweetView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -277,6 +289,8 @@
 		BDAEB2E22649B7180086C9EA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BDE8D4E9264B6F2E001595B3 /* TweetListViewModel.swift */,
+				BDE8D4F7264B766D001595B3 /* TweetViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -285,8 +299,32 @@
 			isa = PBXGroup;
 			children = (
 				BDAEB2F12649BC860086C9EA /* Color+Extension.swift */,
+				BDE8D4FC264B8040001595B3 /* Date+Extention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		BDE8D4B4264B6C4E001595B3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BDE8D4B5264B6C89001595B3 /* TweetRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BDE8D4EE264B702B001595B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD494A22264AEC30002E9748 /* TweetRowView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BDE8D505264BA02E001595B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +570,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD4F8732649F8950061DA85 /* SignupView.swift in Sources */,
+				BDE8D4EA264B6F2E001595B3 /* TweetListViewModel.swift in Sources */,
+				BDE8D4FD264B8040001595B3 /* Date+Extention.swift in Sources */,
 				BDAEB2EC2649BBA20086C9EA /* CustomFieldWithIconView.swift in Sources */,
 				BDAEB2F22649BC860086C9EA /* Color+Extension.swift in Sources */,
 				BDAEB2A22649A7E20086C9EA /* AppDelegate.swift in Sources */,
@@ -540,8 +580,11 @@
 				BD494A23264AEC30002E9748 /* TweetRowView.swift in Sources */,
 				BD494A1E264AEB1F002E9748 /* HomeView.swift in Sources */,
 				BD7A45682649E2860053430E /* CustomButtonView.swift in Sources */,
+				BDE8D4B6264B6C89001595B3 /* TweetRepository.swift in Sources */,
 				BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */,
 				BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */,
+				BDE8D4F8264B766D001595B3 /* TweetViewModel.swift in Sources */,
+				BDE8D4F3264B70EB001595B3 /* NewTweetView.swift in Sources */,
 				BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */,
 				BD5E7E22264B32B200BEF445 /* CustomNavigationView.swift in Sources */,
 				BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */,

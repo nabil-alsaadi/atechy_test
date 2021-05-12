@@ -11,6 +11,7 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var SignupPresented :Bool = false
+    @State var logged: Bool = false
     var body: some View {
         NavigationView {
         VStack(alignment:.center) {
@@ -34,9 +35,15 @@ struct LoginView: View {
             CustomFieldWithIconView(value: $password, label: "Password", secure: true)
             
             VStack {
-                CustomButtonView(title: "Sign in") {
-                    
-                }
+                NavigationLink(
+                    destination: HomeView(),
+                    isActive: $logged,
+                    label: {
+                        CustomButtonView(title: "Sign in") {
+                            self.logged = true
+                        }
+                    })
+                
                     
                 HStack(spacing:0) {
                     Text("Don’t have a Teamio account yet? ")

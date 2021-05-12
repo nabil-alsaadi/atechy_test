@@ -10,22 +10,22 @@ import SwiftUI
 struct HomeView: View {
     @State var replyText : String = ""
     var body: some View {
-        VStack {
-            List(tweets) { tweet in
-                
-                TweetRowView(tweet: tweet)
-                    
+        VStack(spacing:0) {
+            // custom navigation bar
+            CustomNavigationView()
+            // tweets list
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(tweets, id: \.self) { tweet in
+                        TweetRowView(tweet: tweet)
+                    }
+                }
             }
-            .onAppear {
-               UITableView.appearance().separatorStyle = .none
-               // can update any other property like tableFooterView etc
-            }
+            // tweet reply field
             VStack(spacing:8) {
                 Divider()
                     .padding(.trailing,17)
-//                Rectangle()
-//                    .frame(height: 1)
-//                    .foregroundColor(Color.deviderGrey)
+                
                 HStack(spacing:8) {
                     Image("Avatar")
                         .resizable()
@@ -34,7 +34,8 @@ struct HomeView: View {
                         .padding(.leading,20)
                     HStack(spacing: 0) {
                         TextField("Tweet your reply", text: $replyText)
-                        .frame(height: 50)
+                            .foregroundColor(Color.darkGrey)
+                            .frame(height: 50)
                             .padding(.horizontal,12)
                         .background(Color.lightGrey)
                             .foregroundColor(Color.darkGrey)
@@ -49,12 +50,7 @@ struct HomeView: View {
             }
             
         }
-        
-        
-//        List {
-//            TweetRowView(tweet: tweets[0])
-//        }
-        //Text("test")
+        .navigationBarHidden(true)
     }
 }
 
@@ -63,3 +59,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+

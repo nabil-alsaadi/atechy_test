@@ -13,6 +13,7 @@
 		BD494A28264AF0AD002E9748 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A27264AF0AD002E9748 /* Tweet.swift */; };
 		BD494A2D264AF135002E9748 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD494A2C264AF135002E9748 /* ModelData.swift */; };
 		BD494A33264AF2FA002E9748 /* tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = BD494A32264AF2FA002E9748 /* tweets.json */; };
+		BD5E7E22264B32B200BEF445 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E7E21264B32B200BEF445 /* CustomNavigationView.swift */; };
 		BD7A45682649E2860053430E /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7A45672649E2850053430E /* CustomButtonView.swift */; };
 		BDAEB2A22649A7E20086C9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */; };
 		BDAEB2A42649A7E20086C9EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEB2A32649A7E20086C9EA /* SceneDelegate.swift */; };
@@ -55,6 +56,7 @@
 		BD494A27264AF0AD002E9748 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		BD494A2C264AF135002E9748 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BD494A32264AF2FA002E9748 /* tweets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tweets.json; sourceTree = "<group>"; };
+		BD5E7E21264B32B200BEF445 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 		BD7A45672649E2850053430E /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		BDAEB29E2649A7E20086C9EA /* Atechy_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atechy_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAEB2A12649A7E20086C9EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				BDAEB2EB2649BBA20086C9EA /* CustomFieldWithIconView.swift */,
 				BD7A45672649E2850053430E /* CustomButtonView.swift */,
 				BDD4F8772649F98A0061DA85 /* CustomFieldView.swift */,
+				BD5E7E21264B32B200BEF445 /* CustomNavigationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				BDAEB2D62649ABD60086C9EA /* LoginView.swift in Sources */,
 				BD3D53F82649F45500B3BFC5 /* DesignUtilities.swift in Sources */,
 				BDD4F8782649F98A0061DA85 /* CustomFieldView.swift in Sources */,
+				BD5E7E22264B32B200BEF445 /* CustomNavigationView.swift in Sources */,
 				BDAEB2A62649A7E20086C9EA /* ContentView.swift in Sources */,
 				BD494A2D264AF135002E9748 /* ModelData.swift in Sources */,
 			);

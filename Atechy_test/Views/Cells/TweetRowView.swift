@@ -14,7 +14,7 @@ enum itemPosition {
 struct TweetRowView: View {
     
     var tweetViewModel: TweetViewModel
-    @State var postion : itemPosition = .first
+    @Binding var postion : itemPosition
     var index:Int = 0
     var count:Int = 0
     var body: some View {
@@ -82,28 +82,13 @@ struct TweetRowView: View {
         .frame(height: 80)
         .padding(0)
         .onAppear(perform: {
-//            self.postion = .middle
-//            if index == 0 {
-//                self.postion = .first
-//            }
-//            if index == count - 1 {
-//                self.postion = .last
-//            }
         })
-//        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-//          .frame(
-//            minWidth: 0, maxWidth: .infinity,
-//            minHeight: 44,
-//            alignment: .leading
-//          )
-//        .listRowInsets(EdgeInsets())
-//          .background(Color.white)
         
     }
 }
 
 struct TweetRowView_Previews: PreviewProvider {
     static var previews: some View {
-        TweetRowView(tweetViewModel: TweetViewModel(tweet: tweets[0]))
+        TweetRowView(tweetViewModel: TweetViewModel(tweet: tweets[0]), postion: .constant(.first))
     }
 }

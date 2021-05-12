@@ -19,10 +19,8 @@ struct HomeView: View {
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(tweetListViewModel.tweetViewModels, id: \.id) { tweetViewModel in
-                            
-                                TweetRowView(tweetViewModel: tweetViewModel,postion: getPostion(item: tweetViewModel))
-                           
-                            
+                            let test = getPostion(item: tweetViewModel)
+                            TweetRowView(tweetViewModel: tweetViewModel,postion: .constant(test))
                         }
                     }
                 }

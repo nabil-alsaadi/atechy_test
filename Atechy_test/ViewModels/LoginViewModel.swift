@@ -16,46 +16,38 @@ class LoginViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var loading = false
+    @Published var hasError = false
     @Published var error = ""
     private var cancellableSet: Set<AnyCancellable> = []
     func signIn () {
-        loading = true
-        error = ""
-        session?.signIn(email: email, password: password) { (result, error) in
-            self.loading = false
-            if let error = error {
-                self.error = error.localizedDescription
-            } else {
-                self.email = ""
-                self.password = ""
+        validate()
+        if !hasError {
+            loading = true
+            session?.signIn(email: email, password: password) { (result, error) in
+                self.loading = false
+                if let error = error {
+                    self.error = error.localizedDescription
+                } else {
+                    self.email = ""
+                    self.password = ""
+                }
             }
         }
     }
-    // password validation
-      
-    private var isPasswordEmptyPublisher: AnyPublisher<Bool, Never> {
-        $password
-          .debounce(for: 0.8, scheduler: RunLoop.main)
-          .removeDuplicates()
-          .map { password in
-            return password == ""
-          }
-          .eraseToAnyPublisher()
-    }
-    
-    init() {
-        isPasswordEmptyPublisher
-          .receive(on: RunLoop.main)
-          .map { empty in
-            if empty {
-                return "Password must not be empty"
-            }
-            else {
-                return ""
-            }
-          }
-          .assign(to: \.error, on: self)
-          .store(in: &cancellableSet)
+    func validate() {
+        if email.isEmpty {
+            hasError = true
+            error = "email must not be empty"
+        }
+        else if password.isEmpty {
+            hasError = true
+            error = "password must not be empty"
+        }
+        else {
+            hasError = false
+            error = ""
+        }
+         
     }
     
 }
